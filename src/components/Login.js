@@ -7,9 +7,9 @@ import {
 	updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { NETFLIX_BG } from "../utils/constants";
 
 const Login = () => {
 	const [isSignInForm, setIsSignInForm] = useState(true);
@@ -17,7 +17,6 @@ const Login = () => {
 	const name = useRef(null);
 	const email = useRef(null);
 	const password = useRef(null);
-	const navigate = useNavigate();
 	const dispatch = useDispatch();
 
 	const [errorMessage, setErrorMessage] = useState(null);
@@ -69,7 +68,7 @@ const Login = () => {
 						// Profile updated!
 						const {uid, email, displayName, photoURL} = auth.currentUser; 
 						dispatch(addUser({uid: uid, email: email, displayName: displayName, photoURL: photoURL }))
-						navigate("/browse")
+
 					  }).catch((error) => {
 						// An error occurred
 						
@@ -91,7 +90,6 @@ const Login = () => {
 					// Signed in
 					const user = userCredential.user;
 					console.log(user);
-					navigate("/browse")
 				})
 				.catch((error) => {
 					const errorCode = error.code;
@@ -107,7 +105,7 @@ const Login = () => {
 			<div className="absolute brightness-50">
 				<img
 					alt="backgorund"
-					src="https://assets.nflxext.com/ffe/siteui/vlv3/d253acf4-a1e2-4462-a416-f78802dc2d85/7510356b-6d23-43ad-97ac-02a8d9313aa1/CA-en-20240429-POP_SIGNUP_TWO_WEEKS-perspective_WEB_9a5ab034-7530-449d-8242-cd84c2a74ab1_large.jpg"
+					src= {NETFLIX_BG}
 				/>
 			</div>
 			<form
