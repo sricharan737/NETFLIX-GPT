@@ -3,12 +3,13 @@ import Header from "./Header";
 import useTrendingMovies from "../hooks/useTrendingMovies";
 import MainContainer from "./MainContainer"
 import SecondaryContainer from "./SecondaryContainer"
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 
 
 const Browse = () => {
 
 	useTrendingMovies();
-
+	useNowPlayingMovies();
 	return (
 		<div>
 			<Header />

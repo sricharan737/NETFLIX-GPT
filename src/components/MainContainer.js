@@ -4,7 +4,7 @@ import VideoTitle from "./VideoTitle";
 import VideoBackground from "./VideoBackground";
 
 const MainContainer = () => {
-	const movies = useSelector((store) => store.movies?.TrendingMovies);
+	const movies = useSelector((store) => store.movies?.NowPlayingMovies);
 	if (!movies) return; //Early return to counter the movieStore being initially empty and getting an error for movies[0]
 	const mainMovie = movies[0];
 

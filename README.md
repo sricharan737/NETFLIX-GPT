@@ -24,6 +24,11 @@
 - Planning for MainContainer and ScenondaryContainer
 - Embeded the youtube video and made it autoplay
 - Used Tailwind classes to make the Main Container look awesome
+- Build Secondary Component
+- Build MovieList && MovieCard
+- Found the Img CDN URL
+- Made the browse page look amazing
+- usePopularMovies custom hook
 
 
 
