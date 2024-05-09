@@ -29,6 +29,10 @@
 - Found the Img CDN URL
 - Made the browse page look amazing
 - usePopularMovies custom hook
+- GPT search feature
+- GPT search page and search bar
+- (IMPORTANT)Added a multi language feature
+- Integrate the GPT API's (get Open AI key)
 
 
 
