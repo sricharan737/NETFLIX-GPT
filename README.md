@@ -31,7 +31,7 @@
 - usePopularMovies custom hook
 - GPT search feature
 - GPT search page and search bar
-- (IMPORTANT)Added a multi language feature
+- (IMPORTANT)Added a multi language feature in our app
 - Integrate the GPT API's (get Open AI key)
 
 

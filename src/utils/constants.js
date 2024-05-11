@@ -1,3 +1,4 @@
+
 export const LOGO =
 	"https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png";
 export const NETFLIX_BG =
@@ -8,7 +9,7 @@ export const API_OPTIONS = {
 	headers: {
 		accept: "application/json",
 		Authorization:
-			"Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ZWIzODM4ODhmZDg1YTU5OThlNzg1ZmU5Mjg4MGJiMCIsInN1YiI6IjY2MzkzNjM1ODEzY2I2MDEyNDg5ZGU4OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TCojub8aywCn_IO71NDNuS9ew6hDe1xjCNaiJf8tMuo",
+			"Bearer" + process.env.REACT_APP_TMDB_API_KEY,
 	},
 };
 
@@ -16,3 +17,6 @@ export const SUPPORTED_LANGUAGES = [
 	{ identifier: "en", name: "English" },
 	{ identifier: "fn", name: "French" },
 ];
+
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
+
