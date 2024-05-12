@@ -33,6 +33,12 @@
 - GPT search page and search bar
 - (IMPORTANT)Added a multi language feature in our app
 - Integrate the GPT API's (get Open AI key)
+- GPT Search API call
+- fetched the movies based on GPT search suggestions
+- resused the MovieList component to display the said results
+- Memoization of API calls results
+- Added .env file in local repo, and added it to .gitignore
+- Made our app responsive for mobile view  
 
 
 
